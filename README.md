@@ -1,0 +1,1 @@
+In this project, a Jenkins pipeline was created to automate the build and deployment process. It incorporates Git for version control, SonarQube for code quality analysis, and Nexus for artifact repository management. This streamlined pipeline ensures efficient and reliable software development, integrating key DevOps tools for quality assurance and artifact management.
