@@ -1,11 +1,24 @@
-Setting up Jenkins, SonarQube, and Nexus on AWS EC2 instances involves several steps, including instance creation, security group configuration, installation of required software, and configuring the integration. Below is a detailed paragraph outlining the steps:
+Setting up Jenkins, SonarQube, and Nexus on AWS EC2 instances involves several steps, including instance creation, security group configuration,
+installation of required software, and configuring the integration. Below is a detailed paragraph outlining the steps:
 
-To establish an end-to-end DevOps pipeline on AWS EC2 instances, begin by creating separate instances for Jenkins, SonarQube, and Nexus. Utilize bash scripts for automation, initializing EC2 instances with the required dependencies and software installations. These scripts should handle tasks such as updating the system, installing Java (for Jenkins, SonarQube, and Nexus), and pulling the necessary Docker images or software packages.
+To establish an end-to-end DevOps pipeline on AWS EC2 instances, begin by creating separate instances for Jenkins, SonarQube, and Nexus.
+Utilize bash scripts for automation, initializing EC2 instances with the required dependencies and software installations.
+These scripts should handle tasks such as updating the system, installing Java (for Jenkins, SonarQube, and Nexus), and pulling the necessary
+Docker images or software packages.
 
-Once the instances are up, configure security groups to allow the required traffic. Define inbound and outbound rules for SSH, HTTP, and other relevant ports, ensuring secure communication between the instances. For example, Jenkins may require port 8080, SonarQube may use port 9000, and Nexus might utilize port 8081.
+Once the instances are up, configure security groups to allow the required traffic.
+Define inbound and outbound rules for SSH, HTTP, and other relevant ports, ensuring secure communication between the instances. 
+For example, Jenkins may require port 8080, SonarQube may use port 80, and Nexus might utilize port 8081.
 
-With the instances and security groups set up, proceed to install essential plugins for Jenkins to seamlessly integrate with SonarQube and Nexus. Jenkins plugins like "SonarQube Scanner" and "Nexus Platform" can be installed to facilitate smooth interactions between these tools. Additionally, configure authentication and authorization settings to ensure secure access to these tools from Jenkins.
+With the instances and security groups set up, proceed to install essential plugins for Jenkins to seamlessly integrate with SonarQube and Nexus. 
+Jenkins plugins like "SonarQube Scanner" and "Nexus Platform" can be installed to facilitate smooth interactions between these tools.
+Additionally, configure authentication and authorization settings to ensure secure access to these tools from Jenkins.
 
-Finally, craft the Jenkins pipeline script that orchestrates the entire build and deployment process. This script defines stages and steps, such as pulling the source code from Git, building the code, running tests, conducting code quality analysis with SonarQube, and pushing artifacts to Nexus. Each stage leverages the plugins and tools integrated earlier. The script should also incorporate error handling and notifications to alert relevant stakeholders of any issues during the pipeline execution.
+Finally, craft the Jenkins pipeline script that orchestrates the entire build and deployment process. 
+This script defines stages and steps, such as pulling the source code from Git, building the code, running tests,
+conducting code quality analysis with SonarQube, and pushing artifacts to Nexus. Each stage leverages the plugins and tools integrated earlier.
+The script should also incorporate error handling and notifications to alert relevant stakeholders of any issues during the pipeline execution.
 
-By following these steps, you establish a robust and automated DevOps pipeline on AWS, integrating Jenkins, SonarQube, and Nexus for efficient code building, quality analysis, and artifact management. This comprehensive setup enhances the reliability, scalability, and security of the software development and deployment process.
+By following these steps, you establish a robust and automated DevOps pipeline on AWS, integrating Jenkins, SonarQube, and 
+Nexus for efficient code building, quality analysis, and artifact management.
+This comprehensive setup enhances the reliability, scalability, and security of the software development and deployment process.
